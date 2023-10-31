@@ -1,13 +1,10 @@
 $(document).ready(function() {
-    // Store the correct answer (index of correct option)
-    const correctAnswerIndex = 2; // Change this to your desired correct option (0-indexed)
-
-    // Disable other options and show feedback
+    const correctAnswerIndex = 2; 
     $('.option').click(function() {
         const selectedOption = $(this);
         const selectedOptionIndex = $('.option').index(selectedOption);
 
-        $('.option').prop('disabled', true); // Disable all options
+        $('.option').prop('disabled', true); 
 
         if (selectedOptionIndex === correctAnswerIndex) {
             $('.feedback').css('color', 'green').text('Correct!');
